@@ -1,0 +1,68 @@
+<!-- login.html -->
+<form id="login-form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Login">
+</form>
+
+<!-- register.html -->
+<form id="register-form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Register">
+</form>
+<!-- dashboard.html -->
+<div class="container">
+  <h1>Welcome, {{ username }}!</h1>
+  <nav>
+    <ul>
+      <li><a href="#appointments">Appointments</a></li>
+      <li><a href="#medications">Medications</a></li>
+      <li><a href="#health-info">Health Information</a></li>
+    </ul>
+  </nav>
+  <section id="appointments">
+    <h2>Upcoming Appointments</h2>
+    <ul id="appointment-list">
+      <!-- list of appointments will be rendered here -->
+    </ul>
+  </section>
+  <section id="medications">
+    <h2>Medication Reminders</h2>
+    <ul id="medication-list">
+      <!-- list of medications will be rendered here -->
+    </ul>
+  </section>
+  <section id="health-info">
+    <h2>Health Information</h2>
+    <p id="health-info-text"> <!-- health information will be rendered here --></p>
+  </section>
+</div>
+<!-- schedule-appointment.html -->
+<form id="schedule-appointment-form">
+  <label for="doctor">Select Doctor:</label>
+  <select id="doctor" name="doctor">
+    <!-- list of doctors will be rendered here -->
+  </select><br><br>
+  <label for="date">Select Date:</label>
+  <input type="date" id="date" name="date"><br><br>
+  <label for="time">Select Time:</label>
+  <input type="time" id="time" name="time"><br><br>
+  <input type="submit" value="Schedule Appointment">
+</form>
+<!-- medication-reminders.html -->
+<ul id="medication-list">
+  <!-- list of medications will be rendered here -->
+  <li>
+    <span>Medication Name</span>
+    <span>Dosage</span>
+    <span>Frequency</span>
+    <span>Next Reminder</span>
+  </li>
+</ul>
